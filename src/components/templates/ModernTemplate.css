@@ -1,0 +1,162 @@
+.modern-template {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: white;
+}
+
+.modern-preview {
+  transform-origin: top left;
+  zoom: 0.5;
+  padding: 1rem;
+}
+
+.modern-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.modern-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.modern-contact {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.modern-skills,
+.modern-experience,
+.modern-education,
+.modern-summary,
+.modern-certifications,
+.modern-languages,
+.modern-projects,
+.modern-awards {
+  margin-bottom: 2rem;
+}
+
+.modern-skills h2,
+.modern-experience h2,
+.modern-education h2,
+.modern-summary h2,
+.modern-certifications h2,
+.modern-languages h2,
+.modern-projects h2,
+.modern-awards h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+  position: relative;
+}
+
+.modern-skills h2::after,
+.modern-experience h2::after,
+.modern-education h2::after,
+.modern-summary h2::after,
+.modern-certifications h2::after,
+.modern-languages h2::after,
+.modern-projects h2::after,
+.modern-awards h2::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #3498db;
+}
+
+.modern-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.modern-skill-tag {
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.modern-skill-tag:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.modern-content {
+  line-height: 1.6;
+}
+
+.modern-content p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.modern-awards .award-item:last-child {
+  margin-bottom: 0;
+}
+
+.modern-declaration {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-top: 2px solid #2196f3;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  font-style: italic;
+  background: linear-gradient(
+    to right,
+    rgba(33, 150, 243, 0.05),
+    rgba(33, 150, 243, 0.1)
+  );
+  border-radius: 0 0 8px 8px;
+}
+
+.modern-declaration .checkbox-icon {
+  margin-right: 0.5rem;
+  color: #2196f3;
+  font-size: 1.1rem;
+}
+
+@media print {
+  .modern-template {
+    padding: 0;
+  }
+
+  .modern-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .modern-skill-tag {
+    border: 1px solid #ddd;
+  }
+
+  .modern-resume {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .modern-declaration {
+    background: none;
+    border-top: 1px solid #2196f3;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,166 @@
+.creative-template {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: white;
+}
+
+.creative-preview {
+  transform-origin: top left;
+  zoom: 0.5;
+  padding: 1rem;
+}
+
+.creative-sidebar {
+  background: #2c3e50;
+  color: white;
+  padding: 2rem;
+}
+
+.creative-profile {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.creative-profile h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.creative-contact {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.creative-skills-section {
+  margin-top: 2rem;
+}
+
+.creative-skills-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.creative-skills-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #3498db;
+}
+
+.creative-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.creative-skill-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.creative-skill-tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.creative-main {
+  padding: 2rem;
+  background: white;
+}
+
+.creative-section {
+  margin-bottom: 2rem;
+}
+
+.creative-section-header {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.creative-section-header h2 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.creative-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #3498db, transparent);
+}
+
+.creative-content {
+  color: #444;
+  line-height: 1.6;
+}
+
+.creative-content p {
+  margin-bottom: 1rem;
+}
+
+.creative-declaration {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-top: 2px solid #3498db;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #2c3e50;
+  font-style: italic;
+  background: linear-gradient(
+    to right,
+    rgba(52, 152, 219, 0.05),
+    rgba(52, 152, 219, 0.1)
+  );
+  border-radius: 0 0 8px 8px;
+  grid-column: 1 / -1;
+}
+
+.creative-declaration .checkbox-icon {
+  margin-right: 0.5rem;
+  color: #3498db;
+  font-size: 1.1rem;
+}
+
+@media print {
+  .creative-template {
+    grid-template-columns: 250px 1fr;
+  }
+
+  .creative-sidebar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .creative-section {
+    page-break-inside: avoid;
+  }
+
+  .creative-declaration {
+    background: none;
+    border-top: 1px solid #3498db;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .creative-template {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-sidebar {
+    padding: 1.5rem;
+  }
+}
